@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.arvo {
+  font-family: "Arvo", serif;
+}
+
+.bitter {
+    font-family: "Bitter", serif;
+
+}
+.domine{
+    font-family: "Domine", serif;
+
+}
+
