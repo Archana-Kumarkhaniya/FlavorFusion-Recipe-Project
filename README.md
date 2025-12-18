@@ -6,7 +6,7 @@ A modern **Recipe Finder Web Application** built with **React.js** that allows u
 
 🔗 Live Demo
 
-👉 Live Project: https://your-live-link.netlify.app
+👉 Live Project: https://flavourfusionrecipeproject.netlify.app/
 
 ## 🚀 Features
 
