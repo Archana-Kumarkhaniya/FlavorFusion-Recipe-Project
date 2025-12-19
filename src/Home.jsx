@@ -50,7 +50,7 @@ const Home = () => {
     })
 
     return (
-        <div className="bg-[#faf8f3] bitter">
+        <div className="bg-[#faf8f3] bitter overflow-x-hidden">
             {/* Hero Section */}
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
@@ -116,8 +116,8 @@ const Home = () => {
                 </div>
             </motion.section>
 
-
             {/* Section 2 */}
+
             <motion.section
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -143,7 +143,7 @@ const Home = () => {
           flex items-center justify-center
           hover:bg-[#d4a574] transition-all duration-300 z-20"
                     >
-                        <ChevronLeft size={22} className="text-[#d4a574]" />
+                    <ChevronLeft size={22} className="text-[#d4a574]" />
                     </button>
 
                     {/* SLIDER */}
