@@ -19,6 +19,7 @@ const Home = () => {
             const eight = favoriteRecipes.slice(0, 8)
             setRandomRecipes(eight)
         }
+        
     }, [])
 
 

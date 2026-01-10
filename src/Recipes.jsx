@@ -90,13 +90,16 @@ const RecipesPage = ({ searchQuery }) => {
   }, [location.state]);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col lg:flex-row">
+
+    <div className="min-h-screen bg-gray-50 flex flex-col lg:flex-row overflow-x-hidden w-full">
 
       {/* ========== Sidebar Filter Panel ========== */}
-      <aside className="hidden lg:block w-72 bg-white shadow-md border-r p-6 sticky top-0 h-screen flex-shrink-0"
+      <aside
+        className="hidden lg:block w-72 bg-white shadow-md border-r p-6
+  sticky top-0 h-screen flex-shrink-0 overflow-y-auto overflow-x-hidden"
         data-aos="fade-right"
-
       >
+
         <h2 className="text-xl font-bold text-gray-800 mb-6">Filters</h2>
 
         {/* Cooking Time */}
@@ -228,10 +231,9 @@ const RecipesPage = ({ searchQuery }) => {
       <div className="flex-1 flex flex-col">
 
         {/* Mobile Filter Panel */}
-        <div className={`fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50 transform transition-transform duration-300
-          ${mobileFilterOpen ? "translate-x-0" : "-translate-x-full"} lg:hidden`}
-          data-aos="fade-right"
-
+        <div className={`fixed top-0 left-0 h-full w-72 bg-white shadow-lg z-50
+transition-opacity duration-300
+${mobileFilterOpen ? "opacity-100" : "opacity-0 pointer-events-none"} lg:hidden`}
         >
 
           <div className="flex justify-end p-4">
